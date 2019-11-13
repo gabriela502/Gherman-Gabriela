@@ -1,0 +1,131 @@
+
+<html>
+<head>
+    <title> Laborator 4 </title>
+    <style>
+        p {
+            color: darkslateblue;
+            text-align: center;
+        }
+
+        body {
+            background-image: url("fundal.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h1 {
+            color: navy;
+            margin-left: 20px;
+        }
+
+        body {
+            color: purple;
+        }
+
+        h2 {
+            color: hotpink;
+        }
+
+        p.sansserif {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul {
+            list-style-type: square;
+            color: cornflowerblue;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        a:link, a:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        th {
+            background-color: #809fff;
+            color: white;
+        }
+    </style>
+    <script>
+        function myFunction()
+        {
+        document.getElementById("nume").innerHTML="STUDENT POLI";
+        document.getElementById("IMG").src="java.jpg";
+        document.getElementById("TABEL").rows[0].cells[0].innerHTML="Pasiuni";
+        document.getElementById("TABEL").rows[0].cells[1].innerHTML="Aptitudini";
+        document.getElementById("TABEL").rows[0].cells[2].innerHTML="Realizari";
+        document.getElementById("TABEL").rows[1].cells[0].innerHTML="Gatitul";
+        document.getElementById("TABEL").rows[1].cells[1].innerHTML="Control";
+        document.getElementById("TABEL").rows[1].cells[2].innerHTML="Am luat BAC-ul";
+        document.getElementById("TABEL").rows[2].cells[0].innerHTML="Bun ascultator";
+        document.getElementById("TABEL").rows[2].cells[1].innerHTML="Optimism";
+        document.getElementById("TABEL").rows[2].cells[2].innerHTML="Am luat permisul de conducere";
+        document.getElementById("TABEL").rows[3].cells[0].innerHTML="Bun sfatuitor ";
+        document.getElementById("TABEL").rows[3].cells[1].innerHTML="Rabdare ";
+        document.getElementById("TABEL").rows[3].cells[2].innerHTML="Am intrat la facultate";
+        }
+        function varsta()
+        {
+        var today=new Date();
+        var an=today.getFullYear()-parseInt(document.getElementById("Varsta").innerHTML);
+        document.getElementById("Varsta").innerHTML=an;
+
+        }
+    </script>
+</head>
+<body>
+    <h1 id="nume">GHERMAN GABRIELA </h1>
+    <img id="IMG" class="img" src="pagina_html.jpg" width="300" height="300">
+    <p>Email: gabrielagherman502@gmail.com </p>
+    <p>Citat: 'Educatia este ceea ce supravietueste dupa ce tot ce a fost invatat a fost uitat. ' - Burrhus Frederic Skinner  </p>
+    <p onmouseover="Varsta()" id="Varsta">19</p>
+    <button onclick="myFunction()">Alta viata</button>
+
+
+    <br>
+    <br>
+    <table id="TABEL" border="1" cellspacing="10" cellpadding="10" bgcolor="LightPink ">
+        <tr>
+            <th>Disciplina</th>
+            <th>An de studiu</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>Programarea calculatoarelor si limbaje de programare</td>
+            <td>1</td>
+            <td>https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3104.pdf</td>
+        </tr>
+        <tr>
+            <td>Circuite integrate digitale</td>
+            <td>2</td>
+            <td>https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3121.pdf</td>
+        </tr>
+        <tr>
+            <td>Electronica aplicata</td>
+            <td>4</td>
+            <td>https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3148.20.pdf</td>
+        </tr>
+    </table>
+
+    <h2>Hobby-uri</h2>
+    <ul class="a">
+        <li>Vizionez filme/seriale </li>
+        <li>Imi place sa ma plimb </li>
+    </ul>
+    <a href='agenda1.html'>
+        Agenda colegi
+    </a>
+</body>
+</html>
